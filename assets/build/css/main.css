@@ -49,6 +49,21 @@
   color: #000;
   text-decoration: none; }
 
+.site-header {
+  padding: 0 1.6rem;
+  display: block; }
+  @media (min-width: 850px) {
+    .site-header {
+      padding: 0 8.8rem; } }
+
+.site-header__title {
+  text-align: center;
+  margin: 6rem 0 0; }
+
+.site-header__description {
+  text-align: center;
+  margin: 1rem 0 0; }
+
 html {
   font-family: 'Lucida Grande';
   font-size: 13px; }
@@ -57,7 +72,8 @@ html {
       font-size: 17px; } }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  margin: 0; }
 
 h1 {
   font-size: 2rem;

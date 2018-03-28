@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'navigation';
+@import "site-header";
 
 html {
   font-family: 'Lucida Grande';
@@ -12,6 +13,7 @@ html {
 
 body {
   background-color: $color__white;
+  margin: 0;
 }
 
 h1 {

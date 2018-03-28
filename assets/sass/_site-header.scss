@@ -1,0 +1,16 @@
+@import 'variables';
+
+.site-header {
+  @include content-wrapper();
+  display: block;
+}
+
+.site-header__title {
+  text-align: center;
+  margin: 6rem 0 0;
+}
+
+.site-header__description {
+  text-align: center;
+  margin: 1rem 0 0;
+}

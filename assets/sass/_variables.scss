@@ -25,3 +25,13 @@ $breakpoint__s: 550px;
     }
   }
 }
+
+// Mixins
+
+@mixin content-wrapper() {
+  padding: 0 1.6rem;
+
+  @include breakpoint('m') {
+    padding: 0 8.8rem;
+  }
+}
