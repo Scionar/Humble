@@ -1,0 +1,20 @@
+.site-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.site-nav__icon {
+
+}
+
+.nav {
+  display: none;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 100%;
+
+  .site-nav__icon:hover ~ & {
+    display: block;
+  }
+}

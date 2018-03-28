@@ -1,0 +1,31 @@
+.site-nav {
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+.nav {
+  display: none;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 100%; }
+  .site-nav__icon:hover ~ .nav {
+    display: block; }
+
+html {
+  font-family: 'Lucida Grande';
+  font-size: 17px; }
+
+body {
+  background-color: #fff; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+h3, h4 {
+  font-size: 1rem;
+  font-weight: bold; }

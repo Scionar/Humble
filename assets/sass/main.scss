@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'navigation';
+
+html {
+  font-family: 'Lucida Grande';
+  font-size: $font__size--main;
+}
+
+body {
+  background-color: $color__white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3, h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
