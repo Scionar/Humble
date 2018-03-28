@@ -5,5 +5,23 @@ $color__white: #fff;
 $color__gallery: #eee;
 $color__pelorous: #33A0C0;
 
-// Typography
-$font__size--main: 17px;
+// Breakpoints
+$breakpoint__l: 1200px;
+$breakpoint__m: 850px;
+$breakpoint__s: 550px;
+
+@mixin breakpoint($point) {
+  @if $point == l {
+    @media (min-width: $breakpoint__l) {
+      @content;
+    }
+  } @else if $point == m {
+    @media (min-width: $breakpoint__m) {
+      @content;
+    }
+  } @else if $point == s {
+    @media (min-width: $breakpoint__s) {
+      @content;
+    }
+  }
+}

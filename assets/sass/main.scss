@@ -3,7 +3,11 @@
 
 html {
   font-family: 'Lucida Grande';
-  font-size: $font__size--main;
+  font-size: 13px;
+
+  @include breakpoint('s') {
+    font-size: 17px;
+  }
 }
 
 body {

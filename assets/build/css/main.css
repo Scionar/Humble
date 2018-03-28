@@ -51,7 +51,10 @@
 
 html {
   font-family: 'Lucida Grande';
-  font-size: 17px; }
+  font-size: 13px; }
+  @media (min-width: 550px) {
+    html {
+      font-size: 17px; } }
 
 body {
   background-color: #fff; }
