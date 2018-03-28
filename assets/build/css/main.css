@@ -54,7 +54,8 @@
   display: block; }
   @media (min-width: 850px) {
     .site-header {
-      padding: 0 8.8rem; } }
+      padding-left: 8.8rem;
+      padding-right: 8.8rem; } }
 
 .site-header__title {
   text-align: center;
@@ -63,6 +64,24 @@
 .site-header__description {
   text-align: center;
   margin: 1rem 0 0; }
+
+.site-main {
+  margin: 4rem 0 0; }
+
+.post-card {
+  padding: 0 1.6rem;
+  border-bottom: 1px solid #eee;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media (min-width: 850px) {
+    .post-card {
+      padding-left: 8.8rem;
+      padding-right: 8.8rem; } }
+  .post-card:nth-child(2n) {
+    background-color: #FDFDFD; }
+
+.post-card__excerpt {
+  text-align: justify; }
 
 html {
   font-family: 'Lucida Grande';

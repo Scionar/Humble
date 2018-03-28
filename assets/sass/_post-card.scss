@@ -1,0 +1,16 @@
+@import "variables";
+
+.post-card {
+  @include content-wrapper();
+  border-bottom: 1px solid #eee;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &:nth-child(2n) {
+    background-color: $color__light-grey;
+  }
+}
+
+.post-card__excerpt {
+  text-align: justify;
+}
