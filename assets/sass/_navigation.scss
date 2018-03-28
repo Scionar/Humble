@@ -1,20 +1,53 @@
 .site-nav {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 2rem;
+  right: 2rem;
 }
 
 .site-nav__icon {
+  background-color: $color__white;
+  border: 1px solid $color__white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0.5rem;
+  width: 100%;
 
+  .site-nav:hover & {
+    border: 1px solid $color__gallery;
+    border-bottom: 1px solid $color__white;
+  }
 }
 
 .nav {
+  background-color: $color__white;
+  border-radius: 2px;
+  border: 1px solid $color__gallery;
   display: none;
   font-size: 0.8rem;
+  padding: 1rem;
+  margin: 0;
   position: absolute;
-  top: 100%;
+  top: calc(100% - 1px);
+  right: 0;
+  list-style: none;
+  width: 10rem;
+  z-index: -1;
 
-  .site-nav__icon:hover ~ & {
+  .site-nav:hover & {
     display: block;
   }
+}
+
+.nav > li {
+  margin-top: 0.5rem;
+
+  &:first-of-type {
+    margin: 0;
+  }
+}
+
+.nav > li a {
+  color: $color__black;
+  text-decoration: none;
 }

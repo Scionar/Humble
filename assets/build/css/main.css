@@ -1,15 +1,45 @@
 .site-nav {
   position: fixed;
-  top: 0;
-  right: 0; }
+  top: 2rem;
+  right: 2rem; }
+
+.site-nav__icon {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0.5rem;
+  width: 100%; }
+  .site-nav:hover .site-nav__icon {
+    border: 1px solid #eee;
+    border-bottom: 1px solid #fff; }
 
 .nav {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #eee;
   display: none;
   font-size: 0.8rem;
+  padding: 1rem;
+  margin: 0;
   position: absolute;
-  top: 100%; }
-  .site-nav__icon:hover ~ .nav {
+  top: calc(100% - 1px);
+  right: 0;
+  list-style: none;
+  width: 10rem;
+  z-index: -1; }
+  .site-nav:hover .nav {
     display: block; }
+
+.nav > li {
+  margin-top: 0.5rem; }
+  .nav > li:first-of-type {
+    margin: 0; }
+
+.nav > li a {
+  color: #000;
+  text-decoration: none; }
 
 html {
   font-family: 'Lucida Grande';
