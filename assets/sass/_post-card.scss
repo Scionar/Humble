@@ -3,12 +3,21 @@
 .post-card {
   @include content-wrapper();
   border-bottom: 1px solid #eee;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
   &:nth-child(2n) {
     background-color: $color__light-grey;
   }
+}
+
+.post-card__title {
+  @include font__h1();
+}
+
+.post-card__content {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .post-card__excerpt {

@@ -5,11 +5,12 @@ $color__white: #fff;
 $color__gallery: #eee;
 $color__pelorous: #33A0C0;
 $color__light-grey: #FDFDFD;
+$colot__tuna: #33333d;
 
 // Breakpoints
 $breakpoint__l: 1200px;
-$breakpoint__m: 850px;
-$breakpoint__s: 550px;
+$breakpoint__m: 685px;
+$breakpoint__s: 500px;
 
 @mixin breakpoint($point) {
   @if $point == l {
@@ -27,13 +28,27 @@ $breakpoint__s: 550px;
   }
 }
 
-// Mixins
+// Typography
+@mixin font__h1() {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+@mixin font__h2() {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@mixin font__h3() {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+// Content
 @mixin content-wrapper() {
   padding: 0 1.6rem;
 
   @include breakpoint('m') {
-    padding-left: 8.8rem;;
-    padding-right: 8.8rem;;
+    padding: 8.8rem 6rem;
   }
 }

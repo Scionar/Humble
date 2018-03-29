@@ -52,10 +52,9 @@
 .site-header {
   padding: 0 1.6rem;
   display: block; }
-  @media (min-width: 850px) {
+  @media (min-width: 685px) {
     .site-header {
-      padding-left: 8.8rem;
-      padding-right: 8.8rem; } }
+      padding: 8.8rem 6rem; } }
 
 .site-header__title {
   text-align: center;
@@ -71,22 +70,29 @@
 .post-card {
   padding: 0 1.6rem;
   border-bottom: 1px solid #eee;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 850px) {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  @media (min-width: 685px) {
     .post-card {
-      padding-left: 8.8rem;
-      padding-right: 8.8rem; } }
+      padding: 8.8rem 6rem; } }
   .post-card:nth-child(2n) {
     background-color: #FDFDFD; }
+
+.post-card__title {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.post-card__content {
+  max-width: 750px;
+  margin: 0 auto; }
 
 .post-card__excerpt {
   text-align: justify; }
 
 html {
-  font-family: 'Lucida Grande';
-  font-size: 13px; }
-  @media (min-width: 550px) {
+  color: #33333d;
+  font: 13px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; }
+  @media (min-width: 500px) {
     html {
       font-size: 17px; } }
 

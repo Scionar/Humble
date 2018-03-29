@@ -5,8 +5,8 @@
 @import "post-card";
 
 html {
-  font-family: 'Lucida Grande';
-  font-size: 13px;
+  color: $colot__tuna;
+  font: 13px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 
   @include breakpoint('s') {
     font-size: 17px;
@@ -19,18 +19,15 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  @include font__h1();
 }
 
 h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  @include font__h2();
 }
 
 h3, h4 {
-  font-size: 1rem;
-  font-weight: bold;
+  @include font__h3();
 }
 
 a {
