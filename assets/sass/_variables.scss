@@ -47,6 +47,8 @@ $breakpoint__s: 500px;
 // Content
 @mixin content-wrapper() {
   padding: 0 1.6rem;
+  margin: 0 auto;
+  max-width: 750px;
 
   @include breakpoint('m') {
     padding: 8.8rem 6rem;

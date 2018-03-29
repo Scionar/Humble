@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="site-header__content">
+    <h1 class="site-header__title">
+      {{#if @blog.logo}}
+        <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+      {{else}}
+        {{@blog.title}}
+      {{/if}}
+    </h1>
+    <div class="site-header__description">{{@blog.description}}</div>
+  </div>
+  {{> "site-nav"}}
+</header>
