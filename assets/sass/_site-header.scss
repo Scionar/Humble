@@ -7,7 +7,13 @@
   max-width: 750px;
 }
 
+.site-header__title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .site-header__title {
+  @include font__h1;
   text-align: center;
   margin: 6rem 0 0;
 }

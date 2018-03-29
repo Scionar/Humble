@@ -55,7 +55,13 @@
   margin: 0 auto;
   max-width: 750px; }
 
+.site-header__title-link {
+  color: inherit;
+  text-decoration: none; }
+
 .site-header__title {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   margin: 6rem 0 0; }
 
