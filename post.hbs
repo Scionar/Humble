@@ -39,17 +39,7 @@ into the {body} of the default.hbs template --}}
       <footer class="post-full__footer">
         {{!-- Everything inside the #author tags pulls data from the author --}}
         {{#author}}
-
-        <section class="author-card">
-          <h2>Author</h2>
-          {{#if profile_image}}
-            <img class="author-card__author-profile-image" src="{{profile_image}}" alt="{{name}}" />
-          {{/if}}
-          <section class="author-card__content">
-            <h4 class="author-card__name"><a href="{{url}}">{{name}}</a></h4>
-          </section>
-        </section>
-
+        {{> "author-card"}}
         {{/author}}
       </footer>
 
