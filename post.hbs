@@ -16,9 +16,6 @@ into the {body} of the default.hbs template --}}
       <header class="post-full__header">
         <section class="post-full__meta">
           <time class="post-full__meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
-          {{#primary_tag}}
-            <span class="date-divider">/</span> <a href="{{url}}">{{name}}</a>
-          {{/primary_tag}}
         </section>
         <h1 class="post-full__title">{{title}}</h1>
       </header>
