@@ -129,6 +129,7 @@
 .post-full__content .footnote-backref {
   text-decoration: none; }
 
+.post-full__content hr,
 .post-full__content .footnotes-sep {
   border: none;
   border-bottom: 1px solid #eee; }
