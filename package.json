@@ -4,7 +4,7 @@
   "description": "Content focused Ghost theme.",
   "scripts": {
     "compile-sass": "node-sass assets/sass/ -o assets/build/css/",
-    "watch-sass": "node-sass -wr assets/sass/ -o assets/build/css/",
+    "watch-sass": "npm run compile-sass && node-sass -wr assets/sass/ -o assets/build/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
