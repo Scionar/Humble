@@ -7,9 +7,39 @@
 }
 
 .post-full__content {
-  img {
+  img, iframe {
     display: block;
     margin: 4rem auto;
     max-width: 100%;
   }
+
+  pre {
+    border-bottom: 1px solid $color__gallery;
+    border-top: 1px solid $color__gallery;
+    font-family: monospace;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .footnotes {
+
+  }
+
+  .footnotes-list {
+    padding: 0 0 0 1.5rem;
+  }
+
+  .footnote-backref {
+    text-decoration: none;
+  }
+
+  .footnotes-sep {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.post-full__footer {
+  margin: 4rem 0 0;
 }
