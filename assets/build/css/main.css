@@ -1,7 +1,9 @@
 .site-nav {
   position: fixed;
   top: 2rem;
-  right: 2rem; }
+  right: 2rem;
+  height: 2.5rem;
+  width: 2.5rem; }
 
 .site-nav__toggle {
   opacity: 0;
@@ -10,7 +12,8 @@
   width: 100%; }
 
 .site-nav__icon {
-  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
   border-radius: 2px;
   box-sizing: border-box;
   height: 100%;
@@ -19,6 +22,7 @@
   .site-nav:hover .site-nav__icon,
   .site-nav__toggle:checked ~ .site-nav__icon {
     background-color: #fff;
+    border-radius: 2px 0 0 2px;
     border: 1px solid #eee;
     border-bottom: 1px solid #fff; }
 
@@ -34,7 +38,7 @@
   top: calc(100% - 1px);
   right: 0;
   list-style: none;
-  width: 10rem;
+  min-width: 6rem;
   z-index: -1; }
   .site-nav:hover .nav,
   .site-nav__toggle:checked ~ .nav {

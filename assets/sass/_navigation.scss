@@ -2,6 +2,8 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .site-nav__toggle {
@@ -12,7 +14,8 @@
 }
 
 .site-nav__icon {
-  border: 1px solid $color__white;
+  background-color: $color__white--50;
+  border: 1px solid transparent;
   border-radius: 2px;
   box-sizing: border-box;
   height: 100%;
@@ -22,6 +25,7 @@
   .site-nav:hover &,
   .site-nav__toggle:checked ~ & {
     background-color: $color__white;
+    border-radius: 2px 0 0 2px;
     border: 1px solid $color__gallery;
     border-bottom: 1px solid $color__white;
   }
@@ -39,7 +43,7 @@
   top: calc(100% - 1px);
   right: 0;
   list-style: none;
-  width: 10rem;
+  min-width: 6rem;
   z-index: -1;
 
   .site-nav:hover &,
