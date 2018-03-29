@@ -92,13 +92,12 @@ into the {body} of the default.hbs template --}}
 //   scrolling but continuous processing even when not scrolling
 $(document).ready(function () {
     // Start fitVids
-    var $postContent = $(".post-full-content");
+    var $postContent = $(".post-full__content");
     $postContent.fitVids();
     // End fitVids
 
     var progressBar = document.querySelector('progress');
-    var header = document.querySelector('.floating-header');
-    var title = document.querySelector('.post-full-title');
+    var title = document.querySelector('.post-full__title');
 
     var lastScrollY = window.scrollY;
     var lastWindowHeight = window.innerHeight;
@@ -127,13 +126,6 @@ $(document).ready(function () {
         var trigger = title.getBoundingClientRect().top + window.scrollY;
         var triggerOffset = title.offsetHeight + 35;
         var progressMax = lastDocumentHeight - lastWindowHeight;
-
-        // show/hide floating header
-        if (lastScrollY >= trigger + triggerOffset) {
-            header.classList.add('floating-active');
-        } else {
-            header.classList.remove('floating-active');
-        }
 
         progressBar.setAttribute('max', progressMax);
         progressBar.setAttribute('value', lastScrollY);

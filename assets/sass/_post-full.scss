@@ -16,8 +16,8 @@
   pre {
     border-bottom: 1px solid $color__gallery;
     border-top: 1px solid $color__gallery;
-    font-family: monospace;
-    font-size: 0.9rem;
+    font-family: monospace !important;
+    font-size: 0.78rem !important;
     margin: 1.5rem 0;
     padding: 1.5rem;
   }

@@ -13,12 +13,19 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "build/css/main.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "build/css/prism.css"}}"/>
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
 </head>
 <body class="{{body_class}}">
+
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
 
     <div class="site-wrapper">
 
@@ -61,6 +68,7 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
     {{#if pagination.pages}}
     <script>
