@@ -26,14 +26,13 @@
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-                <nav class="site-footer-nav">
-                    <a href="{{@blog.url}}">Latest Posts</a>
-                    {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
-                    {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+        <footer class="site-footer">
+            <div class="site-footer__content">
+                <section class="site-footer__copyright">{{@blog.title}} &copy; {{date format="YYYY"}}</section>
+                <nav class="some-links">
+                    {{#if @blog.facebook}}<a class="some-links__item" href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>{{/if}}
+                    {{#if @blog.twitter}}<a class="some-links__item" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>{{/if}}
+                    <a class="some-links__item" href="https://feedly.com/i/subscription/feed/{{@blog.url}}/rss/" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
                 </nav>
             </div>
         </footer>
