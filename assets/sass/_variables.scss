@@ -51,6 +51,6 @@ $breakpoint__s: 500px;
   max-width: 750px;
 
   @include breakpoint('m') {
-    padding: 5rem 4rem;
+    padding: 5rem 4rem 0;
   }
 }
