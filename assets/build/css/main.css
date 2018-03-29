@@ -56,7 +56,7 @@
   display: block; }
   @media (min-width: 685px) {
     .site-header {
-      padding: 8.8rem 6rem; } }
+      padding: 5rem 4rem; } }
 
 .site-header__title {
   text-align: center;
@@ -75,7 +75,7 @@
   max-width: 750px; }
   @media (min-width: 685px) {
     .site-main__content {
-      padding: 8.8rem 6rem; } }
+      padding: 5rem 4rem; } }
 
 .post-card {
   padding: 0 1.6rem;
@@ -86,7 +86,7 @@
   padding-bottom: 4rem; }
   @media (min-width: 685px) {
     .post-card {
-      padding: 8.8rem 6rem; } }
+      padding: 5rem 4rem; } }
   .post-card:nth-child(2n) {
     background-color: #FDFDFD; }
 
@@ -106,7 +106,7 @@
   max-width: 750px; }
   @media (min-width: 685px) {
     .site-footer__content {
-      padding: 8.8rem 6rem; } }
+      padding: 5rem 4rem; } }
 
 .site-footer__copyright {
   text-align: center; }
