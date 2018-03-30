@@ -83,7 +83,7 @@ $(document).ready(function () {
     $postContent.fitVids();
     // End fitVids
 
-    var progressBar = document.querySelector('progress');
+    var progress = document.querySelector('progress');
     var title = document.querySelector('.post-full__title');
 
     var lastScrollY = window.scrollY;
@@ -114,8 +114,8 @@ $(document).ready(function () {
         var triggerOffset = title.offsetHeight + 35;
         var progressMax = lastDocumentHeight - lastWindowHeight;
 
-        progressBar.setAttribute('max', progressMax);
-        progressBar.setAttribute('value', lastScrollY);
+        progress.setAttribute('max', progressMax);
+        progress.setAttribute('value', lastScrollY);
 
         ticking = false;
     }
