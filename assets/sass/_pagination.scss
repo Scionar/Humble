@@ -1,12 +1,21 @@
 .pagination {
   @include content-wrapper();
+  display: none;
   height: 2rem;
-  margin: 4rem 0 0;
+  margin-top: 4rem;
   text-align: center;
 
   @include breakpoint('m') {
-    margin: 0;
+    margin-top: 0;
   }
+}
+
+.pagination--has-next {
+  display: block;
+}
+
+.pagination--has-prev {
+  display: block;
 }
 
 .pagination__page-number {
