@@ -1,0 +1,31 @@
+.pagination {
+  @include content-wrapper();
+  height: 2rem;
+  margin: 4rem 0 0;
+  text-align: center;
+
+  @include breakpoint('m') {
+    margin: 0;
+  }
+}
+
+.pagination__page-number {
+  margin: 0 1rem;
+}
+
+.pagination__link {
+
+
+  span {
+    display: inline-block;
+    height: 2rem;
+    vertical-align: middle;
+    width: 2rem;
+  }
+
+  svg {
+    display: inline;
+    height: 100%;
+    width: 100%;
+  }
+}
