@@ -181,8 +181,8 @@
   border-top: 1px solid #eee;
   font-family: monospace !important;
   font-size: 0.78rem !important;
-  margin: 1.5rem 0;
-  padding: 1.5rem;
+  margin: 2rem 0 !important;
+  padding: 1.5rem 0 !important;
   overflow: auto; }
 
 .post-full__content .footnotes-list {
@@ -312,12 +312,12 @@ h1 {
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 2.4rem 0 1.2rem; }
+  margin: 3.4rem 0 1.2rem; }
 
 h3, h4 {
   font-size: 1rem;
   font-weight: bold;
-  margin: 2rem 0 1rem; }
+  margin: 3rem 0 1rem; }
 
 a {
   color: #33A0C0; }
