@@ -103,63 +103,42 @@
       padding: 5rem 4rem 0; } }
 
 .post-card {
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 0 0 #999;
   margin: 0 auto;
-  position: relative;
-  width: 80%; }
+  position: relative; }
   @media (min-width: 500px) {
     .post-card {
       margin: 0 auto;
-      width: 50%; } }
+      width: 80%; } }
   .post-card ~ .post-card {
-    margin: 5rem auto 0; }
+    margin: 3rem auto 0; }
     @media (min-width: 500px) {
       .post-card ~ .post-card {
-        margin: 6rem auto 0; } }
-  .post-card:before {
-    content: '';
-    display: block;
-    padding-top: 100%; }
+        margin: 3rem auto 0; } }
 
-.post-card__cover {
-  background-color: #ddd;
-  border-radius: 0.5rem 0.5rem 0 0;
-  height: 50%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%; }
+.post-card__date {
+  color: #999;
+  font-family: sans;
+  flex: 0 0 7rem;
+  margin: 0 1rem 0 0; }
 
-.post-card__cover--has-image {
-  background-size: cover;
-  background-repeat: no-repeat; }
+.post-card__month-and-day {
+  text-align: center; }
 
-.post-card__content {
-  background-color: #fff;
-  border-radius: 0 0 0.5rem 0.5rem;
-  height: 50%;
-  bottom: 0;
-  left: 0;
-  padding: 0 1rem;
-  position: absolute;
-  right: 0; }
+.post-card__year {
+  font-size: 2rem;
+  text-align: center; }
 
 .post-card__title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 2.4rem 0 1.2rem;
   margin: 0rem;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
-  right: 1rem; }
+  display: flex;
+  font-size: 1.4rem;
+  flex-direction: row;
+  align-items: center; }
 
 .post-card__link {
-  color: #33333d; }
+  color: #33333d;
+  display: flex;
+  text-decoration: none; }
 
 .site-footer {
   padding: 3rem 0 3rem; }
@@ -187,6 +166,10 @@
   width: 1.5rem; }
   .some-links__item:first-of-type {
     margin: 0; }
+
+.post-full__meta-date {
+  color: #999;
+  font-family: sans; }
 
 .post-full__content img, .post-full__content iframe {
   display: block;
@@ -313,7 +296,7 @@
 
 html {
   color: #33333d;
-  font: 13px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; }
+  font: 19px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; }
   @media (min-width: 500px) {
     html {
       font-size: 17px; } }

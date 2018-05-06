@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/Scionar/Humble#readme",
   "devDependencies": {
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.9.0"
   },
   "config": {
-      "posts_per_page": 99
+    "posts_per_page": 99
+  },
+  "dependencies": {
+    "hoek": "^5.0.3"
   }
 }
