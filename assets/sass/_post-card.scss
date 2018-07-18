@@ -1,11 +1,8 @@
 .post-card {
+  align-items: center;
+  display: flex;
   margin: 0 auto;
   position: relative;
-
-  @include breakpoint('s') {
-    margin: 0 auto;
-    width: 80%;
-  }
 
   & ~ .post-card {
     margin: 3rem auto 0;
@@ -18,30 +15,20 @@
 
 .post-card__date {
   color: $color__silver;
-  font-family: sans;
+  font-size: 0.7rem;
   flex: 0 0 7rem;
   margin: 0 1rem 0 0;
-}
-
-.post-card__month-and-day {
-  text-align: center;
-}
-
-.post-card__year {
-  font-size: 2rem;
-  text-align: center;
 }
 
 .post-card__title {
   margin: 0rem;
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1rem;
   flex-direction: row;
   align-items: center;
 }
 
 .post-card__link {
   color: $colot__tuna;
-  display: flex;
   text-decoration: none;
 }

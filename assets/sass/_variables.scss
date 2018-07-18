@@ -1,8 +1,11 @@
 // Colors
 // Use to name colors: http://chir.ag/projects/name-that-color/
 $color__black: #000;
+$color__black--075: rgba(0,0,0,0.075);
+$color__black--05: rgba(0,0,0,0.05);
 $color__white: #fff;
 $color__white--50: rgba(256, 256, 256, 0.50);
+$color__white--95: rgba(256, 256, 256, 0.95);
 $color__gallery: #eee;
 $color__alto: #ddd;
 $color__pelorous: #33A0C0;
@@ -35,6 +38,7 @@ $breakpoint__s: 500px;
 @mixin font__h1() {
   font-size: 2rem;
   font-weight: bold;
+  line-height: 130%;
 }
 
 @mixin font__h2() {
@@ -50,10 +54,19 @@ $breakpoint__s: 500px;
 }
 
 // Content
-@mixin content-wrapper() {
-  padding: 3rem 1.6rem 0;
+@mixin center-wrapper() {
   margin: 0 auto;
   max-width: 750px;
+  padding: 0 1.6rem;
+
+  @include breakpoint('m') {
+    padding: 0 4rem;
+  }
+}
+
+@mixin content-wrapper() {
+  @include center-wrapper;
+  padding: 3rem 1.6rem 0;
 
   @include breakpoint('m') {
     padding: 5rem 4rem 0;

@@ -1,20 +1,15 @@
 .site-nav {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  height: 3rem;
-  width: 3rem;
-
-  @include breakpoint('s') {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
+  position: relative;
+  height: 2.5rem;
+  z-index: 1;
+  width: 4.5rem;
 }
 
 .site-nav__toggle {
   opacity: 0;
   position: absolute;
   height: 100%;
+  margin: 0;
   width: 100%;
 }
 

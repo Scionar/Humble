@@ -1,12 +1,7 @@
 <div class="post-card {{post_class}}">
   <a class="post-card__link" href="{{url}}">
     <div class="post-card__date">
-      <div class="post-card__month-and-day">
-        {{date published_at format="MMMM DD"}}
-      </div>
-      <div class="post-card__year">
-        {{date published_at format="YYYY"}}
-      </div>
+      {{date published_at format="MMMM DD, YYYY"}}
     </div>
     <div class="post-card__title">
       {{title}}

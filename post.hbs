@@ -15,7 +15,7 @@ into the {body} of the default.hbs template --}}
 
       <header class="post-full__header">
         <section class="post-full__meta">
-          <time class="post-full__meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+          <time class="post-full__meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM, YYYY"}}</time>
         </section>
         <h1 class="post-full__title">{{title}}</h1>
       </header>
@@ -33,12 +33,13 @@ into the {body} of the default.hbs template --}}
       </section>
       {{/if}}
 
+      {{!--
       <footer class="post-full__footer">
-        {{!-- Everything inside the #author tags pulls data from the author --}}
         {{#author}}
         {{> "author-card"}}
         {{/author}}
       </footer>
+      --}}
 
       {{!--
 
