@@ -18,6 +18,10 @@ into the {body} of the default.hbs template --}}
           <time class="post-full__meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM, YYYY"}}</time>
         </section>
         <h1 class="post-full__title">{{title}}</h1>
+
+        {{#if feature_image}}
+        <img class="post-full__image" src="{{feature_image}}" />
+        {{/if}}
       </header>
 
       <section class="post-full__content">
