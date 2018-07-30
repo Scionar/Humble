@@ -144,7 +144,23 @@
 
 .post-card__link {
   color: #33333d;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 100%; }
+
+.post-card__image-container {
+  border-radius: 0.5rem;
+  height: 4rem;
+  margin: 0.5rem 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.post-card__image {
+  max-width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .site-footer {
   padding: 3rem 0 3rem; }
