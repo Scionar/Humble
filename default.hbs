@@ -81,7 +81,9 @@
     </script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/disqus.js"}}" defer></script>
+    {{#is "post"}}
+      <script type="text/javascript" src="{{asset "js/disqus.js"}}" defer></script>
+    {{/is}}
 
     {{#if pagination.pages}}
     <script>
