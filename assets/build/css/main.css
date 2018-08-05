@@ -78,7 +78,7 @@
       padding: 0 4rem; } }
 
 .site-header__logo {
-  display: inline-block;
+  display: block;
   height: 2rem; }
 
 .site-header__title-link {
