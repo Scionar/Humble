@@ -2,6 +2,8 @@
 
 Content focused [Ghost](https://ghost.org/) theme. Includes index and post page styles. Style is inspired from [koajs.com](http://koajs.com/) and [github.com](https://github.com/).
 
+This theme is in use at [joonaviertola.com](https://joonaviertola.com).
+
 ## Configuration
 
 Site features are controllable with configuration file. Configuration this way are not included into version control. To enable this, create file `/assets/js/config.js` with next content example content.
