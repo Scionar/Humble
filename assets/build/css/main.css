@@ -97,6 +97,7 @@
 
 .site-main {
   margin: 4rem 0 0;
+  overflow: hidden;
   position: relative; }
 
 .site-main__content {
@@ -198,11 +199,6 @@
 .post-full__content {
   margin: 4rem 0 0; }
   .post-full__content iframe {
-    display: block;
-    margin: 4rem auto;
-    max-width: 100%; }
-  .post-full__content img {
-    border-radius: 0.5rem;
     display: block;
     margin: 4rem auto;
     max-width: 100%; }
@@ -327,6 +323,28 @@
   bottom: 0;
   left: 0;
   width: 50%; }
+
+.kg-image-card {
+  margin: 4rem 0; }
+  .kg-image-card .kg-image {
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+  .kg-image-card.kg-width-wide .kg-image {
+    margin: 0 0 0 50%;
+    max-width: 100vw;
+    transform: translateX(-50%);
+    width: 120%; }
+  .kg-image-card.kg-width-full .kg-image {
+    margin: 0 0 0 50%;
+    max-width: 100vw;
+    transform: translateX(-50%);
+    width: 100vw; }
+  .kg-image-card figcaption {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    margin: 1rem 0 0; }
 
 html {
   color: #33333d;
