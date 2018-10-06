@@ -30,7 +30,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.3"
   },
   "config": {
     "posts_per_page": 99
