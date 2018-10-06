@@ -1,22 +1,21 @@
 # Humble :pray:
 
-Content focused [Ghost](https://ghost.org/) theme. Includes index and post page styles. Style is inspired from [koajs.com](http://koajs.com/) and [github.com](https://github.com/).
+Content focused [Ghost](https://ghost.org/) theme. Includes index and post page styles. Style is inspired from [koajs.com](http://koajs.com/) and [github.com](https://github.com/). This theme is in use at [joonaviertola.com](https://joonaviertola.com).
 
-This theme is in use at [joonaviertola.com](https://joonaviertola.com).
+## Disqus support
 
-## Configuration
-
-Site features are controllable with configuration file. Configuration this way are not included into version control. To enable this, create file `/assets/js/config.js` with next content example content.
+Theme has Disqus preinstalled. To enable Disqus with your own configuration, add
+next code snippet into blog header. This can be done from admin panel via code injection section:
 
 ```
-USE_DISQUS = true;
-DISQUS_SHORTNAME = 'joonaviertola';
-DISQUS_URL = 'https://joonaviertola.disqus.com';
+<script>
+  USE_DISQUS = true;
+  DISQUS_SHORTNAME = 'joonaviertola';
+  DISQUS_URL = 'https://joonaviertola.disqus.com';
+</script>
 ```
 
-Change your own configurations. At the moment, only Disqus feature supported.
-
-
+Remember to use your own configuration which you get from your Disqus tools.
 
 ## Development
 
