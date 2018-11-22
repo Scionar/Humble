@@ -1,7 +1,7 @@
 (function() {
   if (USE_DISQUS) {
     var d = document, s = d.createElement('script');
-    s.src = DISQUS_URL + '/embed.js';
+    s.src = 'https://' + DISQUS_SHORTNAME + '.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   } else {

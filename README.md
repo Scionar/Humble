@@ -11,7 +11,6 @@ next code snippet into blog header. This can be done from admin panel via code i
 <script>
   USE_DISQUS = true;
   DISQUS_SHORTNAME = 'joonaviertola';
-  DISQUS_URL = 'https://joonaviertola.disqus.com';
 </script>
 ```
 
