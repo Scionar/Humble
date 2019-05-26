@@ -1,6 +1,6 @@
 # Humble :pray:
 
-Content focused [Ghost](https://ghost.org/) theme. Includes index and post page styles. Style is inspired from [koajs.com](http://koajs.com/) and [github.com](https://github.com/). This theme is in use at [joonaviertola.com](https://joonaviertola.com).
+Content focused [Ghost](https://ghost.org/) theme. Includes index and post page styles. Style is inspired from [koajs.com](http://koajs.com/) and [github.com](https://github.com/).
 
 ## Disqus support
 
